@@ -4,12 +4,20 @@
   "description": "Bravo Care QA Engineer Skill Test",
   "main": "index.js",
   "scripts": {
-    "cypress:run": "cypress run --headed --browser chrome"
+    "cypress:run": "cypress run --headed --browser chrome --reporter mocha-allure-reporter",
+    "report:allure": "allure generate allure-results --clean -o allure-report && allure open allure-report "
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cypress": "^13.6.6"
+  },
+  "devDependencies": {
+    "allure-commandline": "^2.27.0",
+    "mocha": "^10.3.0",
+    "mocha-allure-reporter": "^1.4.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0"
   }
 }
