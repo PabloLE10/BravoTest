@@ -9,3 +9,5 @@ In order to run this project please follow the next steps:
   5. On your terminal run the following command: npm run cypress:run
   6. The browser will be open running the test case.
   7. At the end a short report will be displayed on your terminal with the status of the current run.
+  8. To see a more understandable report generated in allure run the following command in the terminal once the test ends: npm run report:allure
+  9. The last command will open your browser witht the analysis and report. how many tests passed and how many failed.  
